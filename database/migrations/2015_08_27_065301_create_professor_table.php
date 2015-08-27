@@ -20,8 +20,6 @@ class CreateProfessorTable extends Migration
             $table->string('position');
             $table->string('department');
             $table->text('about');
-            $table->string('email');
-            $table->string('password', 60);
             $table->timestamp('accepted_at');
             $table->timestamps();
             
