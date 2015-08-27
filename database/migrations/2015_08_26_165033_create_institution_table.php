@@ -19,8 +19,6 @@ class CreateInstitutionTable extends Migration
             $table->text('address');
             $table->text('contactno');
             $table->string('logo');
-            $table->string('email');
-            $table->string('password', 60);
             $table->timestamp('accepted_at');
             $table->timestamps();
         });
