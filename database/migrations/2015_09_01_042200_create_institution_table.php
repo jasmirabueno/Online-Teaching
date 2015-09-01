@@ -20,7 +20,7 @@ class CreateInstitutionTable extends Migration
             $table->string('logo');
             $table->boolean('verified');
             $table->timestamp('verified_at');
-            $table->integer('admin_user_id');
+            $table->integer('admin_user_id')->unsigned();
             $table->timestamps();
             
             $table->foreign('admin_user_id')->references('id')->on('users')->onDelete('cascade');
